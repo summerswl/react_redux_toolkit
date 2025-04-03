@@ -1,5 +1,4 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { increment, decrement } from "../features/counter/counterSlice";
 import counterReducer from '../features/counter/counterSlice'
 
 // everything imported into the store is available to the entire app through the <Provider> in index.js
