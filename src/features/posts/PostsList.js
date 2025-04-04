@@ -6,6 +6,7 @@
  */
 import { useSelector } from 'react-redux';
 import { selectAllPosts } from './postsSlice';
+import './Posts.css';
 
 import React from 'react'
 

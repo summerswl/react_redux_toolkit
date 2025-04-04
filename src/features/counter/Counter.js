@@ -12,13 +12,19 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement, incrementByAmount, reset } from './counterSlice';
+import './Counter.css';
 
 const Counter = () => {
   const count = useSelector(state => state.counter.count);
   const dispatch = useDispatch();
   const [incrementAmount, setIncrementAmount] = useState(0);
 
-  const handleIncrementAmountChange = (e) => setIncrementAmount(e.target.value);
+  const handleIncrementAmountChange = (e) => {
+    const value = parseInt(e.target.value, 10);
+    if (!isNaN(value) && value >= 0) {
+      setIncrementAmount(value);
+    }
+  };
 
   const resetAll = () => {
     setIncrementAmount(0);

@@ -41,7 +41,7 @@ button:first-child {
 } */
 
 /* css for Posts component */
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -109,4 +109,4 @@ form {
   border: none;
   color: whitesmoke;
   font-size: 1rem;
-}
+} */
