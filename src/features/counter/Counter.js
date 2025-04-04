@@ -1,12 +1,13 @@
 /**
  * Counter component that displays and manages a counter value.
- * Utilizes React and Redux hooks to interact with the global state.
+ * Utilizes React hooks and Redux for state management.
  * 
  * - Displays the current count from the Redux store.
  * - Provides buttons to increment and decrement the count.
  * - Allows the user to input a custom increment amount.
- * - Includes a button to add the custom increment amount to the count.
- * - Provides a reset button to reset the increment amount and counter state.
+ * - Includes a reset button to reset the increment amount and counter state.
+ * 
+ * @returns {JSX.Element} A section containing the counter display and controls.
  */
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';

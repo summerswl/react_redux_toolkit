@@ -1,3 +1,9 @@
+/**
+ * Functional component that renders a list of posts.
+ * Utilizes the `useSelector` hook to access the posts from the Redux store.
+ * Each post is displayed as an article with its title and a truncated version of its content.
+ * Returns a section containing the list of rendered posts.
+ */
 import { useSelector } from 'react-redux';
 import { selectAllPosts } from './postsSlice';
 

@@ -25,7 +25,6 @@ export const counterSlice = createSlice({
     }
 });
 
-// both actions need to be exported
 export const { increment, decrement, reset, incrementByAmount } = counterSlice.actions;
-// store will need full reducer
+
 export default counterSlice.reducer
