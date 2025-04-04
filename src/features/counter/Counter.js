@@ -15,7 +15,7 @@ import { increment, decrement, incrementByAmount, reset } from './counterSlice';
 const Counter = () => {
   const count = useSelector(state => state.counter.count);
   const dispatch = useDispatch();
-  const [incrementAmount, setIncrementAmount] = React.useState(0);
+  const [incrementAmount, setIncrementAmount] = useState(0);
 
   const handleIncrementAmountChange = (e) => setIncrementAmount(e.target.value);
 
@@ -46,4 +46,4 @@ const Counter = () => {
   );
 };
 
-export default Counter;
+export default Counter
